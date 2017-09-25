@@ -1,0 +1,218 @@
+.block {
+	position: relative;
+	padding: 20px;
+	z-index: 10;
+	top: 0;
+	left: 0;
+}
+.block:before, .block:after {
+	position: absolute;
+	content: "";
+	width: 100%;
+	height: 100%;
+}
+.block:before {
+	top: 0;
+	left: 0;
+	z-index: -10;
+	background: #f5f5f5;
+}
+.block:after {
+	top: 4px;
+	left: 4px;
+	z-index: -20;
+	background: rgba(0,0,0,0.1);
+	box-shadow: 4px 4px 0 0 rgba(0,0,0,0.2);
+	-moz-box-shadow: 4px 4px 0 0 rgba(0,0,0,0.2);
+	-webkit-box-shadow: 4px 4px 0 0 rgba(0,0,0,0.2);
+}
+.note {
+	position: relative;
+	border: 3px solid #ccc;
+	border-radius: 8px;
+	padding: 1em;
+}
+.note::before,
+.note::after {
+	position: absolute;
+	bottom: 100%;
+	left: 10%;
+	content: '';
+	height: 0;
+	width: 0;
+	border: 12px solid transparent;
+}
+.note::before {
+	border-bottom: 16px solid #ccc;
+}
+.note::after {
+	border-bottom: 16px solid #fff;
+	margin-bottom: -5px;
+}
+
+#box{
+	padding: 20px;
+	color: #000000;
+	border-radius: 10px;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	background: #F5F5DC;
+}
+
+.btn {
+	background: -moz-linear-gradient(top,#BFD9E5, #63B0CF 50%,#0080B3 50%,#09C);
+	background: -webkit-gradient(linear, left top, left bottom, from(#BFD9E5), color-stop(0.5,#63B0CF), color-stop(0.5,#0080B3), to(#09C));
+	border: 1px solid #DDD;
+	color: #FFF;
+	width: 100px;
+	padding: 10px 0;
+}
+
+input[type="text"],input[type="password"],textarea{
+	line-height: 1;
+	padding: 0.4em 0.6em;
+	border: 1px solid #999;
+	border-radius: 0.8em;
+	letter-spacing: 1px;
+	box-shadow: inset 0.2em 0.2em 0.2em #ccc;
+	background-color: #fff;
+	font-size: inherit;
+}
+
+#midasi{
+	position:relative;
+	padding:5px 20px;
+	font:bold 28px/1.6 Arial, Helvetica, sans-serif;
+	color:#333;
+	background:#fff;
+	text-shadow:
+	1px 1px 0 #fff,
+	2px 2px 0 #999;
+	border-top:#333 solid 3px;
+	border-bottom:#333 solid 3px;
+	background-image: -webkit-gradient(linear, left top, right bottom,
+		from(			rgba(255, 255, 255, 0.0)), 
+		color-stop(0.4, rgba(255, 255, 255, 0.0)), 
+		color-stop(0.4, rgba(0, 0, 0, 0.1)), 
+		color-stop(0.6, rgba(0, 0, 0, 0.1)), 
+		color-stop(0.6, rgba(255, 255, 255, 0.0)),
+		to(				rgba(255, 255, 255, 0.0))
+		);
+	background-image: -webkit-linear-gradient(top -45deg,
+		transparent 40%,
+		rgba(0, 0, 0, 0.1) 40%,
+		rgba(0, 0, 0, 0.1) 60%,
+		transparent 60%
+		);
+	background-image: -moz-linear-gradient(top -45deg,
+		transparent 40%,
+		rgba(0, 0, 0, 0.1) 40%,
+		rgba(0, 0, 0, 0.1) 60%,
+		transparent 60%
+		);
+	background-image: -o-linear-gradient(top -45deg,
+		transparent 40%,
+		rgba(0, 0, 0, 0.1) 40%,
+		rgba(0, 0, 0, 0.1) 60%,
+		transparent 60%
+		);
+	background-image: linear-gradient(to bottom -45deg,
+		transparent 40%,
+		rgba(0, 0, 0, 0.1) 40%,
+		rgba(0, 0, 0, 0.1) 60%,
+		transparent 60%
+		);
+	background-size:4px 4px;
+}
+#midasi:before{
+	content:" ";
+	position:absolute;
+	top:100%;
+	left:24px;
+	width:0;
+	height:0;
+	border-width:12px;#menu ul{
+margin: 0; 
+padding: 0; 
+list-style: none;
+}
+
+#midasi:after{
+	content:" ";
+	position:absolute;
+	top:100%;
+	left:28px;
+	width:0;
+	height:0;
+	border-width:8px;
+	border-style:solid;
+	border-color:transparent;
+	border-top-color:#f0f0f0;
+	z-index:1;
+}
+
+#menu li{ 
+display: inline; 
+padding: 0; 
+margin: 0; 
+float: left;
+}
+
+#menu li a{
+display: block; 
+border: 1px solid #666;
+background-color: #ccc;
+padding: 3px;
+text-decoration: none;
+color: #333;
+width: 100px; 
+margin: 1px;
+text-align: center;
+font-size: 14px;
+}
+#menu li a:hover{
+background-color: #2d56be;
+color: #fff;
+}
+	border-style:solid;
+	border-color:transparent;
+	border-top-color:#333;
+}
+#menu ul{
+margin: 0; 
+padding: 0; 
+list-style: none;
+}
+
+#menu li{ 
+display: inline; 
+padding: 0; 
+margin: 0; 
+float: left;
+}
+
+#menu li a{
+display: block; 
+border: 1px solid #666;
+background-color: #ccc;
+padding: 3px;
+text-decoration: none;
+color: #333;
+width: 100px; 
+margin: 1px;
+text-align: center;
+font-size: 14px;
+}
+#menu li a:hover{
+background-color: #2d56be;
+color: #fff;
+}
+
+.block h3{
+	border-bottom: 3px solid #d7605e;
+	font-size: 20px;
+	margin-top: 15px;
+	margin-bottom: 10px;
+}
+
+
